@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>免费畅享顶级 AI：Not Diamond 多模型聊天指南 | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="GOKU-AI 序言本文将从零开始，系统介绍如何利用基于大语言模型（LLM）的AI进行日常科研和学习工作。如果您只需要快速配置和使用，请关注文中的红色标注部分即可。本文将基于 https:&#x2F;&#x2F;chat.notdiamond.ai&#x2F; 平台的服务展开说明。 Not Diamond平台简介Not Diamond在主要基准测试中表现优异，相较于每个基础模型，显著提升了准确性，同时有效降低了成本和延迟。其核">
+<meta property="og:type" content="article">
+<meta property="og:title" content="免费畅享顶级 AI：Not Diamond 多模型聊天指南">
+<meta property="og:url" content="http://example.com/2024/10/08/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="GOKU-AI 序言本文将从零开始，系统介绍如何利用基于大语言模型（LLM）的AI进行日常科研和学习工作。如果您只需要快速配置和使用，请关注文中的红色标注部分即可。本文将基于 https:&#x2F;&#x2F;chat.notdiamond.ai&#x2F; 平台的服务展开说明。 Not Diamond平台简介Not Diamond在主要基准测试中表现优异，相较于每个基础模型，显著提升了准确性，同时有效降低了成本和延迟。其核">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2024-10-07T23:26:30.000Z">
+<meta property="article:modified_time" content="2024-10-08T07:29:26.001Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/10/08/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '免费畅享顶级 AI：Not Diamond 多模型聊天指南',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-10-08 15:29:26'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo</span></a><a class="nav-page-title" href="/"><span class="site-name">免费畅享顶级 AI：Not Diamond 多模型聊天指南</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">免费畅享顶级 AI：Not Diamond 多模型聊天指南</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-10-07T23:26:30.000Z" title="Created 2024-10-08 07:26:30">2024-10-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-10-08T07:29:26.001Z" title="Updated 2024-10-08 15:29:26">2024-10-08</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>GOKU-AI</p>
+<h1 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h1><p>本文将从零开始，系统介绍如何利用基于大语言模型（LLM）的AI进行日常科研和学习工作。如果您只需要快速配置和使用，请关注文中的<strong>红色标注部分</strong>即可。本文将基于 <a target="_blank" rel="noopener" href="https://chat.notdiamond.ai/">https://chat.notdiamond.ai/</a> 平台的服务展开说明。</p>
+<h1 id="Not-Diamond平台简介"><a href="#Not-Diamond平台简介" class="headerlink" title="Not Diamond平台简介"></a>Not Diamond平台简介</h1><p>Not Diamond在主要基准测试中表现优异，相较于每个基础模型，显著提升了准确性，同时有效降低了成本和延迟。其核心优势在于通过智能模型选择机制，为不同类型的问题匹配最适合的AI模型，从而优化资源利用，减少开销。然而，在我们的日常科研、学习和工作中，完全可以直接使用Not Diamond提供的主流智能模型，以获得高效、准确的AI辅助。</p>
+<h1 id="Not-Diamond配置"><a href="#Not-Diamond配置" class="headerlink" title="Not Diamond配置"></a>Not Diamond配置</h1><ol>
+<li><p><strong>进入网址</strong>：<a target="_blank" rel="noopener" href="https://chat.notdiamond.ai/">https://chat.notdiamond.ai</a></p>
+</li>
+<li><p><strong>注册账户</strong>：输入邮箱和密码注册账号或者直接使用Google&#x2F;Github账户快速登录，实际测试国内邮箱如QQ、163邮箱均可成功注册。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image.png" alt="image.png"></p>
+<p> 如果选择邮箱方式注册，在收件箱打开邮件，点击绿色确认链接即可成功注册。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%201.png" alt="image.png"></p>
+</li>
+<li><p><strong>登录账户</strong>：输入正确的邮箱和密码即可成功登录。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%202.png" alt="image.png"></p>
+</li>
+<li><p><strong>开始使用</strong>：达到如下图界面即为完成配置。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%203.png" alt="image.png"></p>
+</li>
+</ol>
+<h1 id="功能介绍"><a href="#功能介绍" class="headerlink" title="功能介绍"></a>功能介绍</h1><ol>
+<li><p>左侧边栏：新建聊天或者查看既往聊天记录。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%204.png" alt="image.png"></p>
+</li>
+<li><p>设置：自上到下依次为竞技模式、模型选择、系统提示词指定和主题选择。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%205.png" alt="image.png"></p>
+<ol>
+<li><p>竞技模式：开启则会同时使用两个模型回答问题，选择合适的模型来继续回答。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%206.png" alt="image.png"></p>
+</li>
+<li><p>模型选择：可以选择一个或多个大语言模型，Not Diamond会自动从所选模型中进一步选择合适的模型回答用户的问题。</p>
+</li>
+<li><p>系统提示词指定：用户可以指定不同的场景以适应不同的问题。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%207.png" alt="image.png"></p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%208.png" alt="image.png"></p>
+</li>
+<li><p>主题选择：白色或黑色主题。</p>
+</li>
+</ol>
+</li>
+<li><p>模型介绍：介绍Not Diamond支持的模型</p>
+<ol>
+<li>GPT-4o：OpenAI公司提供的最新模型，适合处理复杂任务，速度快，生成质量高。</li>
+<li>GPT-4 Turbo：OpenAI公司提供的最大参数传统模型，适合处理复杂任务，速度较慢，生成质量高。</li>
+<li>GPT-4o Mini：OpenAI公司提供的最新小模型，适合处理日常任务，速度极快，简单问题生成质量较高。</li>
+<li>Claude 3 Haiku：Anthropic公司提供的小模型，适合处理日常任务，速度极快，简单问题生成质量较高。</li>
+<li>Claude 3.5 Sonnet：Anthropic公司提供的最新中型模型，超过上一代的大型模型Claude 3 Opus，适合处理复杂任务，速度快，生成质量高。</li>
+<li>Gemini 1.5 Pro：Google公司提供的主流模型，适合处理复杂任务，速度快，生成质量高。</li>
+<li>Gemini 1.5 Pro （0827）：Google公司提供的最新主流模型，适合处理复杂任务，速度快，生成质量高，建议替代Gemini 1.5 Pro。</li>
+<li>Llama 3.1 70B：Meta公司提供的开源70B参数模型，模型质量一般，中文能力较差。</li>
+<li>Llama 3.1 405B：Meta公司提供的开源405B参数模型，开源模型中最接近闭源模型的大语言模型，模型质量高，中文能力相对较差。</li>
+<li>Perplexity：Perplexity公司提供的模型，无法联网不建议使用。</li>
+<li>Mistral Large 2：Mistral公司的新旗舰模型。</li>
+</ol>
+</li>
+<li><p>推荐模型：</p>
+<ol>
+<li>基本问题：GPT-4o、Claude 3.5 Sonnet、Gemini 1.5 Pro （0827）</li>
+<li>复杂问题：GPT-4 Turbo</li>
+<li>简单问题：GPT-4o Mini</li>
+</ol>
+</li>
+</ol>
+<h1 id="打开方式"><a href="#打开方式" class="headerlink" title="打开方式"></a>打开方式</h1><ol>
+<li><p><strong>单模型使用</strong>：关闭竞技模式，仅使用单一模型。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%209.png" alt="image.png"></p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%2010.png" alt="image.png"></p>
+</li>
+<li><p><strong>多模型使用</strong>：关闭竞技模式，由系统决定回复的模型，可以自行切换模型重新回答。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%2011.png" alt="image.png"></p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%2012.png" alt="image.png"></p>
+</li>
+<li><p><strong>竞技模式</strong>：系统根据问题选择最合适的两个模型，用户选择偏爱的回答，再继续深入聊天。</p>
+<p> <img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%2013.png" alt="image.png"></p>
+</li>
+<li><p><strong>提示词模式</strong>：选择特定提示词，以更好适应不同场景。</p>
+</li>
+</ol>
+<p><img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%208.png" alt="image.png"></p>
+<p><img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%2014.png" alt="image.png"></p>
+<p><img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%2015.png" alt="image.png"></p>
+<p><img src="/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/image%2016.png" alt="image.png"></p>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ol>
+<li>Not Diamond平台免费使用聊天功能，目前每月可以使用10万次聊天，官方表示暂无个人用户聊天收费计划，未来不确定。</li>
+<li>该工具可以上传文件，但是无法识别或生成图片，所有功能仅可用于文本工作，未来不确定。</li>
+<li>该工具在国内网络环境中目前可以正常使用，未来不确定。</li>
+<li>该工具的最大优势在于可以同时使用多家AI公司的主流模型，无需繁杂昂贵的订阅费用，不同问题可以使用具体不同优势的大模型去回答。</li>
+</ol>
+<h1 id="提示词推荐"><a href="#提示词推荐" class="headerlink" title="提示词推荐"></a>提示词推荐</h1><h3 id="论文总结"><a href="#论文总结" class="headerlink" title="论文总结"></a>论文总结</h3><p>Please summarize the academic paper I’ve uploaded using the following structured framework:</p>
+<p>Title of this paper</p>
+<ol>
+<li><strong>Background of the Study:</strong> Describe the general background and necessity of the research, including the key problems or challenges in the field that the study aims to address and the motivation behind the research.</li>
+<li><strong>Research Objectives and Hypotheses:</strong> Clearly state the specific objectives and hypotheses of the study, explaining how they provide direction for the research.</li>
+<li><strong>Methodology:</strong><br>3.1 Research Design: Provide a concise and clear overview of the research design include a description of how the study is structured, the types of groups involved (e.g., control and experimental), how participants or samples were selected and assigned to groups, and how variables are controlled.<br>3.2 Experimental Techniques: Detail the experimental techniques used in the study.<br>3.3 Data Analysis Methods: List and describe all the data analysis methods or models used.</li>
+<li><strong>Results and Findings:</strong> Summarize the main data and conclusions, highlighting the key results and most important findings. Add necessary statistical level indicators.</li>
+<li><strong>Discussion and Interpretation:</strong> Interpret the significance of the results within the context of existing theories or research, analyzing the underlying mechanisms or broader implications.</li>
+<li><strong>Contributions to the Field:</strong> Summarize the study’s contributions to the field, emphasizing its innovation, uniqueness, and how it fills knowledge gaps or offers new solutions.</li>
+<li><strong>Limitations and Future Work:</strong> Discuss the study’s limitations and propose future research directions or improvements based on the findings.</li>
+<li><strong>Figures:</strong> List the first sentence of all Figures headings in the literature.</li>
+<li><strong>Tables:</strong> List the first sentence of all Tables headings in the literature.</li>
+</ol>
+<p>Make sure the summary is comprehensive and follows the order and structure provided. After you have completed the full summary, then translate the results into Chinese to be displayed later.</p>
+<h3 id="生物医学概念解释"><a href="#生物医学概念解释" class="headerlink" title="生物医学概念解释"></a>生物医学概念解释</h3><p>请使用中文（和必要的英文释义或缩写）为用户解释用户提出的概念，包括以下内容：</p>
+<ol>
+<li>其基本定义和功能是什么？</li>
+<li>它的背景与起源来自什么？</li>
+<li>它的生物学或医学机制是什么？</li>
+<li>主要应用领域有哪些？</li>
+<li>主要优势和潜在的副作用或风险是什么？</li>
+<li>当前研究的最新进展或未来发展方向是什么？</li>
+</ol>
+<h3 id="R语言助手"><a href="#R语言助手" class="headerlink" title="R语言助手"></a>R语言助手</h3><p>这个 GPT 专门用于辅助生成和修改 R 语言代码。它的主要功能包括：1) 根据用户需求生成简洁、直接的 R 代码；2) 修改和优化已有的 R 代码。请注意，这个 GPT 只会生成R语言代码，不会执行数据分析，也绝对不会产生其他的文字说明，同时也绝对不会在代码中加入任何注释（包括代码的分段）。为了便于复制和使用，所有生成的代码必须被放置在一个代码框中。在绘图相关的请求中，GPT 将主要使用 ggplot2() 函数，并在代码末尾加入 ggthemes::theme_base() 以确保图形风格的一致性。若用户提供数据框的展示（例如通过 R 的 head() 函数），或直接给出数据的生成函数，GPT 将使用提供的数据框名称或数据生成信息来生成或修改代码。此外，如果用户上传了报错的代码和相关报错信息，GPT 将根据这些信息对代码进行调整和完善。</p>
+<h3 id="学术论文写作助手"><a href="#学术论文写作助手" class="headerlink" title="学术论文写作助手"></a>学术论文写作助手</h3><p>Your role is to assist in English academic writing, including three core functions: drafting, rewriting, and proofreading. When used, the user should specify the desired function followed by the content to be processed. You’ll then process and return the content accordingly.</p>
+<ol>
+<li>Draft: Organize a paragraph for an English academic paper based on provided Chinese and English material. The paragraph should be logical, with accurate and concise language, adhering to academic publication standards.</li>
+<li>Rewrite: Polish and rewrite the provided paragraph to enhance its formality, logic, and adherence to academic paper style.</li>
+<li>Proof: Check and make minor corrections to the provided text. Focus on lexical and grammatical errors, obvious inappropriateness, or illogicality. Other content should remain unchanged. Boldly mark the modifications made.</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/2024/10/08/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/">http://example.com/2024/10/08/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">John Doe</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%BA%8F%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">序言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Not-Diamond%E5%B9%B3%E5%8F%B0%E7%AE%80%E4%BB%8B"><span class="toc-number">2.</span> <span class="toc-text">Not Diamond平台简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Not-Diamond%E9%85%8D%E7%BD%AE"><span class="toc-number">3.</span> <span class="toc-text">Not Diamond配置</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D"><span class="toc-number">4.</span> <span class="toc-text">功能介绍</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E6%96%B9%E5%BC%8F"><span class="toc-number">5.</span> <span class="toc-text">打开方式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A1%B9"><span class="toc-number">6.</span> <span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8F%90%E7%A4%BA%E8%AF%8D%E6%8E%A8%E8%8D%90"><span class="toc-number">7.</span> <span class="toc-text">提示词推荐</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BA%E6%96%87%E6%80%BB%E7%BB%93"><span class="toc-number">7.0.1.</span> <span class="toc-text">论文总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E7%89%A9%E5%8C%BB%E5%AD%A6%E6%A6%82%E5%BF%B5%E8%A7%A3%E9%87%8A"><span class="toc-number">7.0.2.</span> <span class="toc-text">生物医学概念解释</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#R%E8%AF%AD%E8%A8%80%E5%8A%A9%E6%89%8B"><span class="toc-number">7.0.3.</span> <span class="toc-text">R语言助手</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%A6%E6%9C%AF%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C%E5%8A%A9%E6%89%8B"><span class="toc-number">7.0.4.</span> <span class="toc-text">学术论文写作助手</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/10/08/AI%E4%BB%8E0%E5%85%A5%E9%97%A8%E7%B3%BB%E7%BB%9F%E6%95%99%E7%A8%8B%20fff937cf8443815e9a2fde37206911de/" title="免费畅享顶级 AI：Not Diamond 多模型聊天指南">免费畅享顶级 AI：Not Diamond 多模型聊天指南</a><time datetime="2024-10-07T23:26:30.000Z" title="Created 2024-10-08 07:26:30">2024-10-08</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
